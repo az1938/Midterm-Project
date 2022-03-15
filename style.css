@@ -140,7 +140,7 @@ p:nth-child(2){
   }
 
 .lfp2{
-  border: 0.15vw;
+  border: 0.1vw;
   border-style: double;
   border-color: #F8F9FA;
   align-self: flex-end;
@@ -216,13 +216,15 @@ p:nth-child(2){
   font-family: 'Barlow', sans-serif;
   text-align: center;
   color: white;
-  font-size: 0.8vw;
+  font-size: 1vw;
   position: absolute;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
+  width:85%;
+  line-height: 1.5vw;
 }
 
 .sec4{
@@ -255,6 +257,7 @@ h2{
   font-family: 'Barlow', sans-serif;
   font-weight: 300;
   font-size: 1.2vw;
+  line-height: 2vw;
   padding: 0vw 3vw;
   text-align: justify;
   color: #212529;
@@ -323,14 +326,13 @@ h2{
   }
 
 .lfp3{
-  width:7vw;
-  border: 0.25vw;
+  border: 0.1vw;
   border-style: double;
-  border-color: #6C757D;
+  border-color: black;
   align-self: flex-end;
   text-align: center;
   margin: 2.5vh 3vw;
-  padding: 0vh 2vw;
+  padding: 0vh 1vw;
   color: #black;
   font-family: 'Barlow', sans-serif;
   font-size: 1vw;
@@ -480,7 +482,7 @@ h2{
   width:7vw;
   border: 0.1vw;
   border-style: double;
-  border-color: #6C757D;
+  border-color: #768088;
   align-self: flex-end;
   text-align: center;
   margin: 5vh 18.5vw;
@@ -497,7 +499,7 @@ h2{
   }
 
 .lfp4 a {
-  color: #6C757D;
+  color: #5E656C;
   background-color: transparent;
   text-decoration: none;
   }
@@ -631,9 +633,23 @@ h2{
   line-height: 0vw;
   }
 
-.artimgs{
-  width: 33.33vw;
+  .container5 {
+    position: relative;
+    width: 33.33vw;
   }
+
+.artimgs{
+  opacity: 1;
+  display: block;
+  width: 100%;
+  transition: .5s ease;
+  backface-visibility: hidden;
+  }
+
+  .container5:hover .artimgs {
+  opacity: 0.5;
+}
+
 
 .sec55{
   background-color: white;
